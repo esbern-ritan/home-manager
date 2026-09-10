@@ -39,6 +39,7 @@
         "runih@nixos-pi5"      = (callHost ./hosts/linux/nixos-pi5/flake.nix     pi5Args).homeConfigurations.nixos-pi5;
         "minecraft@nixos-pi5"  = (callHost ./hosts/linux/nixos-pi5/flake.nix     pi5Args).homeConfigurations.minecraft;
         "runih@nixos"          = (callHost ./hosts/linux/nixos/flake.nix         hostArgs).homeConfigurations.nixos;
+        "esbern@nixos"         = (callHost ./hosts/linux/esbern-nixos/flake.nix  hostArgs).homeConfigurations.nixos;
         "runih@nixos2"         = (callHost ./hosts/linux/nixos2/flake.nix        hostArgs).homeConfigurations.nixos2;
         "runih@madakara-nixos" = (callHost ./hosts/linux/madakara-nixos/flake.nix hostArgs).homeConfigurations.madakara-nixos;
         "nas"                  = (callHost ./hosts/linux/nas/flake.nix           nasArgs).homeConfigurations.nas;
